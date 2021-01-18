@@ -2,12 +2,14 @@
 
 ### Job CI
 Se debe crear un _Multibranch Pipeline Job_ para CI con el repositorio URL: `https://github.com/jorgemparrah/ms-iclab.git`.
-Y se deben agregar los siguientes behaviors:
+Y se deben agregar los siguientes behaviors y properties:
 
 #### Behavior: Filter by name (with wildcars)
 - Agregar behavior _Filter by name (with wildcars)_
 - Colocar en _Include_ el valor: `*`
 - Colocar en _Exclude_ el valor: `*release-* *main *master`
+#### Property: Suppress automatic SCM triggering
+- Agregar property _Suppress automatic SCM triggering_
 
 ### Job CD
 Se debe crear un _Multibranch Pipeline Job_ para CD con el repositorio URL: `https://github.com/jorgemparrah/ms-iclab.git`.
